@@ -8,7 +8,7 @@ The Dockerfile is designed to pull the code from Github and build the latest tag
 Currently configured to only server error pages in English, edit in squid.conf.
 
 ## TODO
-Currently everything runs as root, to change to run as local user
+Currently everything runs as root, to change to run as local user  
 Some of the folders are set to 777 to just skip access rights issues, to resolve those
 
 ## Components
@@ -46,5 +46,5 @@ Run Squid
 > /usr/local/squid/sbin/squid -f /tmp/squid.conf -NCd1
 
 Run c-icap in foreground with max debug
-/usr/local/bin/c-icap -f /usr/local/etc/c-icap.conf -N -D -d 10 -S
+> /usr/local/bin/c-icap -f /usr/local/etc/c-icap.conf -N -D -d 10 -S
 
